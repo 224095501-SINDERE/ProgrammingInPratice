@@ -1,0 +1,38 @@
+#include <stdio.h> 
+
+int main() {
+
+    double basicSalary = 0.00;
+    double housing = 0.00;
+    double transport = 0.00;
+    double tax = 0.00;
+    double grossSalary = 0.00;
+    double netSalary = 0.00;
+
+    //ask user to input values for basic salary
+    printf("Enter basic salary: ");
+    scanf("%lf", &basicSalary);
+
+    //ask user to input values for housing
+    printf("Enter housing allowance: ");
+    scanf("lf", &housing);
+
+    //ask user to input transport allowance
+    printf("Enter transport allowance: ");
+    scanf("%lf", &transport);
+
+    //ask user to input values for tax
+    printf("Enter tax: ");
+    scanf("%lf", &tax);
+
+    //Calculate gross and net salaries
+    grossSalary = basicSalary + housing + transport;
+    netSalary = grossSalary - tax;
+
+    //Display the results
+    printf("GrossSalary: %lf\n", grossSalary);
+    printf("NetSalary: %if", netSalary);
+
+    
+    return 0;
+}
